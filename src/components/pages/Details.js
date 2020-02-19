@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { InfoConsumer } from '../context';
-import styled from 'styled-components';
-import Reviews from '../Reviews';
+import React, { Component } from "react";
+import { InfoConsumer } from "../context";
+import styled from "styled-components";
+import Reviews from "../Reviews";
 
 class Details extends Component {
   render() {
@@ -29,7 +29,7 @@ class Details extends Component {
                 <div className="container mt-5">
                   <div className="row justify-content-center">
                     <div className="col-2">
-                      <i className="fab fa-facebook-f" />
+                      <i className="fas fa-facebook-f" />
                     </div>
                     <div className="col-2">
                       <i className="fab fa-twitter" />
@@ -109,12 +109,13 @@ class Details extends Component {
                   {/* Map */}
                   <div className="tab-pane" id="map" role="tabpanel">
                     <iframe
+                      title="myFrame"
                       src={maps}
                       style={{
-                        border: '0',
-                        height: '28.125rem',
-                        width: '100%',
-                        frameborder: '0'
+                        border: "0",
+                        height: "28.125rem",
+                        width: "100%",
+                        frameborder: "0"
                       }}
                     />
                   </div>

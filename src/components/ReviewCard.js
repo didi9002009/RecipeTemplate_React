@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { InfoConsumer } from './context';
+import React, { Component } from "react";
+import { InfoConsumer } from "./context";
 
 class ReviewCard extends Component {
   render() {
@@ -11,11 +11,13 @@ class ReviewCard extends Component {
             <img
               src={avatar}
               alt={name}
-              style={{ width: '40px' }}
+              style={{ width: "40px" }}
               className="mr-3"
             />
             <div className="media-body">
-              <h5 className="mt-0">{name}</h5>
+              <h5 key={id} className="mt-0">
+                {name}
+              </h5>
               <p>{comment}</p>
             </div>
           </div>

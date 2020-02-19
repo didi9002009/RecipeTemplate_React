@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Contacts extends Component {
   render() {
@@ -15,12 +15,13 @@ class Contacts extends Component {
           <div className="row">
             <div className="col-md-7">
               <iframe
-                src="https://www.google.com/maps/d/embed?mid=1h9PyWJ9-uAFIIilnpaebyJB00bZ8EhqT"
+                title="myMap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53599.55250695815!2d151.6222525506212!3d-32.89890771930266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7338dc137b0a09%3A0x5017d681632f620!2sWallsend%20NSW%202287!5e0!3m2!1sen!2sau!4v1582100225975!5m2!1sen!2sau"
                 style={{
-                  border: '0',
-                  width: '100%',
-                  height: '315px',
-                  frameborder: '0'
+                  border: "0",
+                  width: "100%",
+                  height: "315px",
+                  frameborder: "0"
                 }}
                 allowFullscreen
               />
