@@ -6,6 +6,37 @@
   --mainBlue: #007bff;
 }
 
+.info {
+  background: #c9c1ac;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  color: #c9c1ac;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../public/images/sushiOnTable.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.primary-color {
+  color: #d3325f;
+}
+
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+.info a {
+  transition: 2s ease-in-out;
+}
+
+.info a:hover {
+  color: #242424;
+}
+
 .navbar-toggler:focus {
   outline: none;
 }

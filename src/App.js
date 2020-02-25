@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import "../node_modules/bootstrap.min.css";
+import Icons from "./components/layouts/Icons";
 import Navbar from "./components/layouts/Navbar";
 import Footer from "./components/layouts/Footer";
 // // React Router Import
@@ -16,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Icons />
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />

@@ -1,13 +1,30 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.info {
+  background: #c9c1ac;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "courier New",
-    monospace;
+body {
+  font-family: "Courgette", cursive;
+  color: #c9c1ac;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/sushiOnTable.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.primary-color {
+  color: #d3325f;
+}
+
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+.info a {
+  transition: 2s ease-in-out;
+}
+
+.info a:hover {
+  color: #242424;
 }
