@@ -1,13 +1,72 @@
 import React from "react";
-import logo from "../../logo.svg";
+// import logo from "../../logo.svg";
+// import {
+//   Nav,
+//   Navbar,
+//   NavDropdown,
+//   Form,
+//   FormControl,
+//   Button
+// } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavbarComponent() {
   return (
+    // <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    //   <Navbar.Brand href="#home">Food Moster</Navbar.Brand>
+    //   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    //   <Navbar.Collapse id="responsive-navbar-nav">
+    //     <Nav className="mr-auto">
+    //       <Nav.Link href="#specials">Specials</Nav.Link>
+    //       <Nav.Link href="#menu">Menu</Nav.Link>
+    //       <Nav.Link href="#about">About</Nav.Link>
+    //       <Nav.Link href="#reviews">Reviews</Nav.Link>
+    //       <Nav.Link href="#team">Team</Nav.Link>
+    //       <Nav.Link href="#contackt">Contact</Nav.Link>
+    //       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+    //         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+    //         <NavDropdown.Item href="#action/3.2">
+    //           Another action
+    //         </NavDropdown.Item>
+    //         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+    //         <NavDropdown.Divider />
+    //         <NavDropdown.Item href="#action/3.4">
+    //           Separated link
+    //         </NavDropdown.Item>
+    //       </NavDropdown>
+    //     </Nav>
+    //     <Form inline>
+    //       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+    //       <Button variant="outline-primary">Search</Button>
+    //     </Form>
+    //   </Navbar.Collapse>
+    // </Navbar>
+
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-      <a className="navbar-brand ml-5" href="/#">
-        <img src={logo} alt="logo" style={{ width: "35px" }} />
-      </a>
+      {/* <a className="navbar-brand ml-5" href="/#">
+          <img src={logo} alt="logo" style={{ width: "35px" }} />
+        </a> */}
+      <div className="container-fluid info p-3" id="top-icons">
+        <div className="row">
+          <div className="col d-flex justify-content-between align-items-baseline flex-wrap">
+            <div className="info-icons p-2">
+              <Link href="#" className="mr-2 primary-color">
+                <i className="fab fa-facebook fa-2x" />
+              </Link>
+              <Link href="#" className="mr-2 primary-color">
+                <i className="fab fa-instagram fa-2x" />
+              </Link>
+              <Link href="#" className="mr-2 primary-color">
+                <i clLinkss="fab fa-twitter fa-2x" />
+              </Link>
+              <Link href="#" className="mr-2 primary-color">
+                <i className="fab fa-yelp fa-2x" />
+              </Link>
+            </div>
+            <h2 className="primary-color p-2 text-capitalize">Information</h2>
+          </div>
+        </div>
+      </div>
       <button
         className="navbar-toggler"
         type="button"
@@ -67,4 +126,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarComponent;
