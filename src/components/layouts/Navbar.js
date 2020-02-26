@@ -27,6 +27,9 @@ class NavbarComponent extends Component {
             type="button"
             data-toggle="collapse"
             data-target="#myNavbar"
+            aria-controls="myNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <div className="toggler-btn">
               <div className="bar bar1" />
@@ -44,36 +47,25 @@ class NavbarComponent extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  href="#special-items"
-                  className="nav-link text-capitalize"
-                >
-                  special items
-                </Link>
+                <Link className="nav-link text-capitalize">special items</Link>
               </li>
               <li className="nav-item">
-                <Link href="#menu" className="nav-link text-capitalize">
-                  menu
-                </Link>
+                <Link className="nav-link text-capitalize">menu</Link>
               </li>
               <li className="nav-item">
-                <Link href="#about" className="nav-link text-capitalize">
+                <Link className="nav-link text-capitalize" to="/news">
                   about
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="#reviews" className="nav-link text-capitalize">
-                  reviews
-                </Link>
+                <Link className="nav-link text-capitalize">reviews</Link>
               </li>
               <li className="nav-item">
-                <Link href="#team" className="nav-link text-capitalize">
-                  team
-                </Link>
+                <Link className="nav-link text-capitalize">team</Link>
               </li>
               <li className="nav-item">
-                <Link href="#contact" className="nav-link text-capitalize">
-                  contact
+                <Link className="nav-link text-capitalize" to="/contacts">
+                  contacts
                 </Link>
               </li>
             </ul>

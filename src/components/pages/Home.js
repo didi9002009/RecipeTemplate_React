@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import { InfoConsumer } from '../context';
-import Info from '../Info';
+import React, { Component } from "react";
+import { InfoConsumer } from "../context";
+import Info from "../Info";
+import Menu from "../layouts/Menu";
 
 class Home extends Component {
   render() {
     return (
       <div className="container">
         <div className="row mt-5">
+          <Menu />
           <InfoConsumer>
             {value => {
               return value.info.map(item => {
