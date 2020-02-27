@@ -4,70 +4,54 @@ import { Link } from "react-router-dom";
 class Contacts extends Component {
   render() {
     return (
-      <section className="my-5 py-5">
-        <div className="container">
-          <div className="well well-sm">
-            <h3>
-              <strong>Our Location</strong>
-            </h3>
-          </div>
-
+      <section id="contact">
+        <div className="container-fluid no-padding">
           <div className="row">
-            <div className="col-md-7">
-              <iframe
-                title="myMap"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53599.55250695815!2d151.6222525506212!3d-32.89890771930266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b7338dc137b0a09%3A0x5017d681632f620!2sWallsend%20NSW%202287!5e0!3m2!1sen!2sau!4v1582100225975!5m2!1sen!2sau"
-                style={{
-                  border: "0",
-                  width: "100%",
-                  height: "315px",
-                  frameborder: "0"
-                }}
-                allowFullscreen
-              />
+            <div className="col-md-6 my-3">
+              <div className="embed-responsive embed-responsive-21by9 height-60">
+                <iframe className="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214209.98185206568!2d151.549615306413!3d-32.976584806088354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b733e1371c702e5%3A0x4017d681632a8a0!2sNewcastle%20NSW!5e0!3m2!1sen!2sau!4v1578897097955!5m2!1sen!2sau" width="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
             </div>
-            <div className="col-md-5">
-              <h4>
-                <strong>Contact Us</strong>
-              </h4>
-              <form>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Name"
-                  />
+            <div className="col-md-6 my-3 align-self-center">
+              <div className="card text-center">
+                <div className="card-header">
+                  <h1 className="text-uppercase">contact list</h1>
                 </div>
-                <div className="form-group">
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Email"
-                  />
+                <div className="card-body">
+                  <form >
+                    {/* <!-- input group 1--> */}
+              <div className="input-group my-3">
+                      <div className="input-group-prepend">
+                        <div className="input-group-text" id="input-text">
+                          <i className="fas fa-user"></i>
+                        </div>
+                      </div>
+                      <Form.Control type="text" id="text" className="form-control form-control-lg" placeholder="Enter your name here" />
+                      {/* <!-- input group 2--> */}
+              <div className="input-group my-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text" id="input-phone">
+                            <i className="fas fa-phone"></i>
+                          </div>
+                        </div>
+                        <Form.Control type="text" id="phone" className="form-control form-control-lg" placeholder="Enter your phone number here" />
+                        {/* <!-- input group 3--> */}
+              <div className="input-group my-3">
+                          <div className="input-group-prepend">
+                            <div className="input-group-text" id="input-email">
+                              <i className="fas fa-envelope"></i>
+                            </div>
+                          </div>
+                          <Form.Control type="email" id="text" className="form-control form-control-lg" placeholder="Enter your email here" />
+                          <button type="submit" className="btn btn-block btn-lg text-uppercase contact-btn"><i className="far fa-hand-point-right mr-2"></i>click here</button>
+            </form>
+                      </div>
+                    </div>
+      </div>
                 </div>
-                <div className="form-group">
-                  <input
-                    type="tel"
-                    className="form-control"
-                    placeholder="Phone"
-                  />
-                </div>
-                <textarea
-                  className="form-control"
-                  cols="30"
-                  rows="3"
-                  placeholder="Message"
-                />
-                <Link className="btn btn-outline-primary text-uppercase mt-1">
-                  <i className="fa fa-paper-plane-o" aria-hidden="true" />
-                  <i className="fab fa-telegram-plane" />
-                  &nbsp;Send
-                </Link>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+              </div>
+</section>
+     
     );
   }
 }
