@@ -1,108 +1,137 @@
-import React from "react";
+import React, { Component } from "react";
+// import { SingleImage } from "react-magnific-popup";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-function Menu() {
-  return (
-    <MenuContainer>
-      <section className="py-5" id="special-items">
-        <div className="container my-5">
-          <div className="row parent-container">
-            {/*  menu item   */}
-            <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
-              <div className="item-container">
-                <img
-                  src="../../.././images/sushiBlack.jpg"
-                  className="img-fluid img-thumbnail item-img"
-                  alt="menu item"
-                />
-                <a href="img/sushiBlack.jpg">
-                  <h1 className="text-uppercase text-center item-link px-3">
-                    menu item
-                  </h1>
-                </a>
+class Menu extends Component {
+  // constructor(props, context) {
+  //   super(props, context);
+  //   this.state = {
+  //     singleSample: "hide",
+  //     lightBoxSample: "hide",
+  //     zoomGallery: "hide",
+  //     popupVideo: "hide",
+  //     popupZoom: "hide",
+  //     popupForm: "hide",
+  //     popupAjax: "hide"
+  //   };
+  // }
+
+  // onToggle(type, e) {
+  //   e.preventDefault();
+  //   let newState = {};
+
+  //   newState[type] = this.state[type] === "hide" ? "show" : "hide";
+  //   this.setState(newState);
+  // }
+
+  render() {
+    return (
+      <MenuContainer>
+        <section className="py-5" id="special-items">
+          <div className="container my-5">
+            <div className="row parent-container">
+              {/*  menu item   */}
+              <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div className="item-container">
+                  {/* <SingleImage> */}
+                  <img
+                    src="../../.././images/sushiBlack.jpg"
+                    className="img-fluid img-thumbnail item-img"
+                    alt="menu item"
+                  />
+                  <a
+                    href="../../.././images/sushiBlack.jpg"
+                    // onClick={this.onToggle.bind(this, "singleSample")}
+                  >
+                    <h1 className="text-uppercase text-center item-link px-3">
+                      menu item
+                    </h1>
+                  </a>
+                  {/* </SingleImage> */}
+                </div>
               </div>
-            </div>
-            {/* <!-- menu item --> */}
-            <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
-              <div className="item-container">
-                <img
-                  src="../../.././images/sushiChops.jpg"
-                  className="img-fluid img-thumbnail item-img"
-                  alt="menu item"
-                />
-                <a href="img/sushiChops.jpg">
-                  <h1 className="text-uppercase text-center item-link px-3">
-                    menu item
-                  </h1>
-                </a>
+              {/* <!-- menu item --> */}
+              <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div className="item-container">
+                  <img
+                    src="../../.././images/sushiChops.jpg"
+                    className="img-fluid img-thumbnail item-img"
+                    alt="menu item"
+                  />
+                  <a href="../../.././images/sushiChops.jpg">
+                    <h1 className="text-uppercase text-center item-link px-3">
+                      menu item
+                    </h1>
+                  </a>
+                </div>
               </div>
-            </div>
-            {/* <!-- menu item --> */}
-            <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
-              <div className="item-container">
-                <img
-                  src="../../.././images/sushiOnTable.jpg"
-                  className="img-fluid img-thumbnail item-img"
-                  alt="menu item"
-                />
-                <Link href="img/sushiOnTable.jpg">
-                  <h1 className="text-uppercase text-center item-link px-3">
-                    menu item
-                  </h1>
-                </Link>
+              {/* <!-- menu item --> */}
+              <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div className="item-container">
+                  <img
+                    src="../../.././images/sushiOnTable.jpg"
+                    className="img-fluid img-thumbnail item-img"
+                    alt="menu item"
+                  />
+                  <Link href="../../.././images/sushiOnTable.jpg">
+                    <h1 className="text-uppercase text-center item-link px-3">
+                      menu item
+                    </h1>
+                  </Link>
+                </div>
               </div>
-            </div>
-            {/* <!-- menu item --> */}
-            <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
-              <div className="item-container">
-                <img
-                  src="i../../.././images/sushiWhole.jpg"
-                  className="img-fluid img-thumbnail item-img"
-                  alt="menu item"
-                />
-                <Link href="img/sushiWhole.jpg">
-                  <h1 className="text-uppercase text-center item-link px-3">
-                    menu item
-                  </h1>
-                </Link>
+              {/* <!-- menu item --> */}
+              <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div className="item-container">
+                  <img
+                    src="../../.././images/sushiWhole.jpg"
+                    className="img-fluid img-thumbnail item-img"
+                    alt="menu item"
+                  />
+                  <Link href="../../.././images/sushiWhole.jpg">
+                    <h1 className="text-uppercase text-center item-link px-3">
+                      menu item
+                    </h1>
+                  </Link>
+                </div>
               </div>
-            </div>
-            {/* <!-- menu item --> */}
-            <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
-              <div className="item-container">
-                <img
-                  src="../../.././images/sushiKnives.jpg"
-                  className="img-fluid img-thumbnail item-img"
-                  alt="menu item"
-                />
-                <Link href="img/sushiKnives.jpg">
-                  <h1 className="text-uppercase text-center item-link px-3">
-                    menu item
-                  </h1>
-                </Link>
+              {/* <!-- menu item --> */}
+              <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div className="item-container">
+                  <img
+                    src="../../.././images/sushiKnives.jpg"
+                    className="img-fluid img-thumbnail item-img"
+                    alt="menu item"
+                  />
+                  <Link href="../../.././images/sushiKnives.jpg">
+                    <h1 className="text-uppercase text-center item-link px-3">
+                      menu item
+                    </h1>
+                  </Link>
+                </div>
               </div>
-            </div>
-            {/* <!-- menu item --> */}
-            <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
-              <div className="item-container">
-                <img
-                  src="../../.././images/sushiRed.jpg"
-                  className="img-fluid img-thumbnail item-img"
-                  alt="menu item"
-                />
-                <Link href="img/sushiRed.jpg">
-                  <h1 className="text-uppercase text-center item-link px-3">
-                    menu item
-                  </h1>
-                </Link>
+              {/* <!-- menu item --> */}
+              <div className="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                <div className="item-container">
+                  <img
+                    src="../../.././images/sushiRed.jpg"
+                    className="img-fluid img-thumbnail item-img"
+                    alt="menu item"
+                  />
+                  <Link href="../../.././images/sushiRed.jpg">
+                    <h1 className="text-uppercase text-center item-link px-3">
+                      menu item
+                    </h1>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </MenuContainer>
-  );
+        </section>
+      </MenuContainer>
+    );
+  }
 }
 
 export default Menu;
