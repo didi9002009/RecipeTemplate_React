@@ -99,7 +99,12 @@ const NavbarContainer = styled.nav`
   .navbar-brand:hover {
     color: #242424;
   }
-
+  .navbar-collapse {
+    display: block;
+  }
+  /* .collapse {
+    display: none;
+  } */
   .nav-link {
     color: #242424;
     text-decoration: none;
