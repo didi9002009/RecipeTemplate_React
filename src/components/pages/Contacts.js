@@ -26,7 +26,7 @@ class Contacts extends Component {
                   <div className="card-header">
                     <h1 className="text-uppercase">contact list</h1>
                   </div>
-                  <div clas $(".navbar-collapse").collapse('hide');sName="card-body">
+                  <div className="card-body">
                     <form>
                       {/* <!-- input group 1--> */}
                       <div class="input-group my-3">
